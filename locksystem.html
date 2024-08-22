@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Lock System</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script type="text/javascript" src="lock.js"></script>
+        <style>
+            .num{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                cursor: pointer;
+                margin: 5px;
+            }
+            .bar{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                padding: 10px;
+                height: 350px;
+                width: 250px;
+                justify-content: center;
+                align-content: center;
+            }
+            .pin-indicators {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .circle {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 2px solid black;
+                margin: 0 5px;
+            }
+            .link-button {
+                background-color: transparent;
+                border: none;
+                color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 20px;
+                padding: 0;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Enter Lock Pin</h1>
+            <div class="pin-indicators">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle4"></div>
+            </div>
+            <div class="bar">
+                <button class="num" onclick="enterpin(1)">1</button>
+                <button class="num" onclick="enterpin(2)">2</button>
+                <button class="num" onclick="enterpin(3)">3</button>
+                <button class="num" onclick="enterpin(4)">4</button>
+                <button class="num" onclick="enterpin(5)">5</button>
+                <button class="num" onclick="enterpin(6)">6</button>
+                <button class="num" onclick="enterpin(7)">7</button>
+                <button class="num" onclick="enterpin(8)">8</button>
+                <button class="num" onclick="enterpin(9)">9</button>
+                <div></div>
+                <button class="num" onclick="enterpin(0)">0</button>
+                <button class="num" onclick="deletepin()"><i class="fas fa-backspace" style="font-size: 1.5em;"></i></button>
+                <button class="num" onclick="resetclicked()">Reset</button>
+                <div></div>
+                <a class="link-button" href="C:\Users\SURENDRA VUTUKURI\Desktop\Tasks\update.html"style="font-size:20px;">Update</a>
+            </div>
+        </center>
+    </body>
+</html>
